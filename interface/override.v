@@ -1,4 +1,4 @@
-//fino@2021.4.15: failed to run this case with - V 0.2.2 d90be54
+//fino@2021.4.15: failed to run this case after - V 0.2.2 d90be54
 
 struct Cat {
 	name string
