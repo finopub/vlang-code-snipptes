@@ -28,7 +28,7 @@ fn cb_frame(mut ctx gg.Context) {
     //ctx.draw_poly_empty([f32(50.0), 50.0, 70.0, 60.0, 90.0, 80.0, 70.0, 110.0], gx.black)
     //ctx.draw_triangle_filled(450, 142, 530, 280, 370, 280, gx.red) 
     if ctx.frame <= 300 {
-    	img_name := strconv.v_sprintf("~/Videos/output_%04d.png", ctx.frame)
+    	img_name := strconv.v_sprintf('/home/yuan/Videos/qianqian/output_%04d.png', ctx.frame)
     	//println(img_name)
 	img_png := ctx.create_image(img_name)
 	ctx.draw_image(0, 0, 720, 1280, &img_png)
