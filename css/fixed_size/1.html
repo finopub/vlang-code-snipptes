@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="UTF-8">
+        <title>Hello fixed size layout</title>
+        <style>
+            html { 
+		display: table;
+		width: 100%;
+		height: 100%;
+		background-color: #91a3b0;
+	    }
+            body {
+		display: table-cell;
+		vertical-align: middle;
+                max-width: 29.7cm;
+		max-height: 21cm;
+                /*min-height: 100vh;*/
+                margin: 0 auto;
+                padding: 0;
+		border: 0;
+                background-color: papayawhip;
+            }
+            #container {
+                width: 29.7cm;
+                height: 20.99cm; /* need < 21cm, to avoid print as 2 A4 pages */
+                margin: auto;
+                padding: 0.3cm;
+		border: 0;
+                background-color: #e5e4e2;
+            }
+            h1 {
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+		<h1>A4 printer paper size: 210 x 297 mm</h1>
+        </div>
+	<p style="page-break-after: always;">&nbsp;</p>
+	<p style="page-break-before: always;">&nbsp;</p>
+        <div id="container">
+		<h1>Second A4 page.</h1>
+        </div>
+
+    </body>
+</html>
